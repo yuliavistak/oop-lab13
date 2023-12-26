@@ -1,8 +1,9 @@
 package org.example.Task3;
 
 import lombok.Builder;
+import lombok.ToString;
 
-@Builder
+@Builder @ToString
 public class Company {
     private String domain;
     private String description;
@@ -21,7 +22,4 @@ public class Company {
         this.description = db.getDescription();
 
     }
-
-
-
 }
