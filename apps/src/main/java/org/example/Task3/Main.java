@@ -3,9 +3,11 @@ package org.example.Task3;
 
 public class Main {
     public static void main(String[] args) {
-        OpenAIEnricher a = new OpenAIEnricher();
-        String path = "https://nltu.edu.ua/";
+        String path = "insert-path";
 
-        a.extract(path);
+        Company company = new Company(path);
+        
+        company.getInfo();
+        System.out.println(company.toString());
     }
 }
